@@ -26,8 +26,7 @@ before_script:
   - cmake ..
   - make
 
-script: 
-  - cd tmp
+script:
   - ./Vector/Vector -l test_suite
   - ./Simple_Heap/Simple_Heap -l test_suite
   - ./Heap/Heap -l test_suite

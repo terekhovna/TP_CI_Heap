@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1)
 
-add_executable(heap TestVector.cpp)
+add_executable(Vector TestVector.cpp)
 
-target_link_libraries(heap ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY})
+target_link_libraries(Vector ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY})
