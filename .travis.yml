@@ -32,3 +32,4 @@ script:
   - ./Heap/Heap -l test_suite
   - ./Binomial_Heap/Binomial_Heap -l test_suite
   - ./Fibonachi_Heap/Fibonachi_Heap -l test_suite
+  - ./Test_All/Test_All -l test_suite
