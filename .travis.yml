@@ -27,6 +27,7 @@ before_script:
   - make
 
 script: 
+  - cd tmp
   - ./Vector/Vector -l test_suite
   - ./Simple_Heap/Simple_Heap -l test_suite
   - ./Heap/Heap -l test_suite
