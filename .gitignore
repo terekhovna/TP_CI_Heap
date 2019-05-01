@@ -1,0 +1,6 @@
+*.o
+*.exe
+*.swp
+*~
+*.vscode
+tmp
