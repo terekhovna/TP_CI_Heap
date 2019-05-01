@@ -1,6 +1,6 @@
 language: cpp
 dist: trusty
-sudo: false
+sudo: true
 os: linux
 
 matrix:
@@ -27,13 +27,13 @@ before_script:
 #   - make
 
 script:
-  # - ./Vector/Vector -l test_suite
-  # - ./Simple_Heap/Simple_Heap -l test_suite
-  # - ./Heap/Heap -l test_suite
-  # - ./Binomial_Heap/Binomial_Heap -l test_suite
-  # - ./Fibonachi_Heap/Fibonachi_Heap -l test_suite
-  # - ./TestAll/TestAll -l test_suite
+  - ./Vector/Vector -l test_suite
+  - ./Simple_Heap/Simple_Heap -l test_suite
+  - ./Heap/Heap -l test_suite
+  - ./Binomial_Heap/Binomial_Heap -l test_suite
+  - ./Fibonachi_Heap/Fibonachi_Heap -l test_suite
+  - ./TestAll/TestAll -l test_suite
 
 after_script:
   - cd ..
-  - ./telegram_notification.sh
+  - bash ./telegram_notification.sh
