@@ -5,7 +5,7 @@ os: linux
 
 matrix:
   include:
-    - env: COMPILER=g++-7 BUILD=Release STANDARD=17
+    - env: COMPILER=g++-6 BUILD=Release STANDARD=17
       compiler: gcc
       addons:
         apt:
@@ -14,8 +14,11 @@ matrix:
             - sourceline: 'ppa:mhier/libboost-latest'
             - ubuntu-toolchain-r-test
           packages:
-            - g++-7
+            - g++-6
             - boost1.67
+
+install:
+  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 90
 
 script: 
   - g++ main.cpp --std=c++17 -o travis_gcc_cpp17
