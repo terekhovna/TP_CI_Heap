@@ -23,8 +23,8 @@ install:
 before_script:
   - mkdir tmp
   - cd tmp
-#   - cmake ..
-#   - make
+  - cmake ..
+  - make
 
 script:
   - ./Vector/Vector -l test_suite
