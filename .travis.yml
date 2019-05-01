@@ -18,5 +18,5 @@ matrix:
             - boost1.67
 
 script: 
-  - g++ main.cpp -std=c++17 -o travis_gcc_cpp17
+  - g++ main.cpp --std=c++17 -o travis_gcc_cpp17
   - ./travis_gcc_cpp17
