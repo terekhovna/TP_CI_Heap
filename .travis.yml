@@ -20,9 +20,9 @@ matrix:
 install:
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 90
 
-# before_script:
-#   - mkdir tmp
-#   - cd tmp
+before_script:
+  - mkdir tmp
+  - cd tmp
 #   - cmake ..
 #   - make
 
@@ -33,7 +33,6 @@ script:
   # - ./Binomial_Heap/Binomial_Heap -l test_suite
   # - ./Fibonachi_Heap/Fibonachi_Heap -l test_suite
   # - ./TestAll/TestAll -l test_suite
-  cd ..
 
 after_script:
   - cd ..
