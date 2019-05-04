@@ -10,7 +10,7 @@ curl -s -X POST\
     -F chat_id="${TELEGRAM_CHAT_ID}"\
     -F text=\
 "Результат сборки: ${built_r}
-Номер Job:${TRAVIS_JOB_NUMBER}
-Log Job:${TRAVIS_JOB_WEB_URL}
-Log Build:${TRAVIS_BUILD_WEB_URL}
-Commit:${TRAVIS_COMMIT}"
+Номер Job: ${TRAVIS_JOB_NUMBER}
+Log Job: ${TRAVIS_JOB_WEB_URL}
+Log Build: ${TRAVIS_BUILD_WEB_URL}
+Commit: ${TRAVIS_COMMIT}"
