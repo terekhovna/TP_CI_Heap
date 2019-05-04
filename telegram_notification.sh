@@ -1,4 +1,4 @@
-if [ $TRAVIS_TEST_RESULT -eq 1 ]
+if [ $TRAVIS_TEST_RESULT -eq 0 ]
 then
     built_r="successed"
 else
@@ -10,7 +10,6 @@ curl -s -X POST\
     -F chat_id="${TELEGRAM_CHAT_ID}"\
     -F text=\
 "Результат сборки: ${built_r}
-Номер Job: ${TRAVIS_JOB_NUMBER}
-Log Job: ${TRAVIS_JOB_WEB_URL}
+Номер Build: ${TRAVIS_BUILD_NUMBER}
 Log Build: ${TRAVIS_BUILD_WEB_URL}
-Commit: ${TRAVIS_COMMIT}"
+Commit: ${TRAVIS_COMMIT_MESSAGE}"
