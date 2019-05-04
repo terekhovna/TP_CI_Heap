@@ -12,4 +12,4 @@ curl -s -X POST\
 "Результат сборки: ${built_r}
 Номер Build: ${TRAVIS_BUILD_NUMBER}
 Log Build: ${TRAVIS_BUILD_WEB_URL}
-Commit: ${TRAVIS_COMMIT_MESSAGE}"
+Commit message: \"${TRAVIS_COMMIT_MESSAGE}\""
